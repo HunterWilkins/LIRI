@@ -54,6 +54,8 @@ function movieThis(input){
     axios.get(queryUrl).then(function(response){
         console.log(response.data.Title);
         console.log(response.data.Year);
+        console.log(response.data.Country);
+        console.log("Language: " + response.data.Language);
         console.log(response.data.Plot);
         console.log(response.data.Actors);
         console.log("IMDB Rating: " + response.data.Ratings[0].Value);
